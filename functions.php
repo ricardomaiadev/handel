@@ -20,13 +20,13 @@ function handel_custom_images() {
 
 }
 
-add_action('after_setup_theme', 'handel_custom_images');
+/* add_action('after_setup_theme', 'handel_custom_images');
 
 
 function handel_loop_shop_per_page() {
     return 10;
 }
 
-add_filter('loop_shop_per_page', 'handel_loop_shop_per_page');
+add_filter('loop_shop_per_page', 'handel_loop_shop_per_page'); */
 
 ?>
