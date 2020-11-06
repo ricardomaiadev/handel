@@ -5,19 +5,22 @@ get_header();
 $products_slide = wc_get_products([
     'limit' => 6,
     'tag' => ['slide'],
+    'stock_status' => 'instock'
 ]);
 
 $products_new = wc_get_products ([
     'limit' => 9,
     'orderby' => 'date',
-    'orde' => 'DESC'
+    'orde' => 'DESC',
+    'stock_status' => 'instock'
 ]);
 
 $products_sales = wc_get_products ([
     'limit' => 9,
     'meta_key' => 'total_sales',
     'orderby' => 'meta_value_num',
-    'orde' => 'DESC'
+    'orde' => 'DESC',
+    'stock_status' => 'instock'
 ]);
 
 $data = [];
